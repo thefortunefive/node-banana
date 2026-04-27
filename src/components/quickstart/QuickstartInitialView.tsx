@@ -20,9 +20,9 @@ export function QuickstartInitialView({
         <div className="flex-1 flex flex-col">
           <div className="mb-4">
             <div className="flex items-center gap-2">
-              <img src="/banana_icon.png" alt="" className="w-7 h-7" />
+              <img src="/fifth-ave-icon.png" alt="" className="w-7 h-7" />
               <h1 className="text-2xl font-medium text-neutral-100">
-                Node Banana
+                5th Ave AI Studio
               </h1>
             </div>
           </div>
@@ -33,7 +33,7 @@ export function QuickstartInitialView({
 
           <div className="flex flex-col gap-2.5 mt-auto">
             <a
-              href="https://node-banana-docs.vercel.app/"
+              href="https://fifth-ave-ai-docs.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-neutral-400 hover:text-neutral-200 transition-colors"
@@ -81,7 +81,7 @@ export function QuickstartInitialView({
               >
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
-              Willie
+              Fifth Avenue AI
             </a>
             <a
               href="https://nodebananapro.com"
@@ -89,8 +89,8 @@ export function QuickstartInitialView({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-neutral-400 hover:text-neutral-200 transition-colors"
             >
-              <img src="/banana_icon.png" alt="" className="w-4 h-4" />
-              NB Pro Waitlist
+              <img src="/fifth-ave-icon.png" alt="" className="w-4 h-4" />
+              Pro Waitlist
             </a>
           </div>
         </div>

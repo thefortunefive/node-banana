@@ -75,19 +75,19 @@ describe("Header", () => {
   describe("Basic Rendering", () => {
     it("should render the app title", () => {
       render(<Header />);
-      expect(screen.getByText("Node Banana")).toBeInTheDocument();
+      expect(screen.getByText("5th Ave AI Studio")).toBeInTheDocument();
     });
 
-    it("should render the banana icon", () => {
+    it("should render the Fifth Ave icon", () => {
       render(<Header />);
-      const icon = screen.getByAltText("Banana");
+      const icon = screen.getByAltText("5th Ave AI");
       expect(icon).toBeInTheDocument();
-      expect(icon).toHaveAttribute("src", "/banana_icon.png");
+      expect(icon).toHaveAttribute("src", "/fifth-ave-icon.png");
     });
 
-    it("should render 'Made by Willie' link", () => {
+    it("should render 'Fifth Avenue AI' link", () => {
       render(<Header />);
-      const link = screen.getByText("Made by Willie");
+      const link = screen.getByText("Fifth Avenue AI");
       expect(link).toHaveAttribute("href", "https://x.com/ReflctWillie");
     });
 

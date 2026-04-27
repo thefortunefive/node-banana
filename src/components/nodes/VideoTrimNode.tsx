@@ -215,7 +215,7 @@ export function VideoTrimNode({ id, data, selected }: NodeProps<VideoTrimNodeTyp
             rel="noopener noreferrer"
             className="text-[10px] text-blue-400 hover:text-blue-300 underline"
           >
-            Doesn&apos;t seem right? Message Willie on Discord.
+            Doesn&apos;t seem right? Message us on Discord.
           </a>
         </div>
       </BaseNode>

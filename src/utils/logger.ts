@@ -1,5 +1,5 @@
 /**
- * Centralized logging utility for Node Banana
+ * Centralized logging utility for 5th Ave AI Studio
  *
  * Features:
  * - Session-based logging (one log file per workflow execution)

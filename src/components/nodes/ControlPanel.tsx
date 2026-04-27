@@ -39,7 +39,7 @@ const GENERATION_NODE_TYPES: NodeType[] = [
 // Base 10 aspect ratios (all Gemini image models)
 const BASE_ASPECT_RATIOS: AspectRatio[] = ["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"];
 
-// Extended 14 aspect ratios (Nano Banana 2 adds extreme ratios)
+// Extended 14 aspect ratios (Studio Flash adds extreme ratios)
 const EXTENDED_ASPECT_RATIOS: AspectRatio[] = ["1:1", "1:4", "1:8", "2:3", "3:2", "3:4", "4:1", "4:3", "4:5", "5:4", "8:1", "9:16", "16:9", "21:9"];
 
 // Resolutions per model
@@ -48,9 +48,9 @@ const RESOLUTIONS_NB2: Resolution[] = ["512", "1K", "2K", "4K"];
 
 // Hardcoded Gemini image models
 const GEMINI_IMAGE_MODELS: { value: ModelType; label: string }[] = [
-  { value: "nano-banana", label: "Nano Banana" },
-  { value: "nano-banana-2", label: "Nano Banana 2" },
-  { value: "nano-banana-pro", label: "Nano Banana Pro" },
+  { value: "nano-banana", label: "Studio Standard" },
+  { value: "nano-banana-2", label: "Studio Flash" },
+  { value: "nano-banana-pro", label: "Studio Pro" },
 ];
 
 // LLM providers and models
@@ -280,7 +280,7 @@ function GenerateImageControls({ node }: { node: Node }) {
         const newSelectedModel: SelectedModel = {
           provider: "gemini",
           modelId: nodeData.model || "nano-banana-pro",
-          displayName: GEMINI_IMAGE_MODELS.find(m => m.value === (nodeData.model || "nano-banana-pro"))?.label || "Nano Banana Pro",
+          displayName: GEMINI_IMAGE_MODELS.find(m => m.value === (nodeData.model || "nano-banana-pro"))?.label || "Studio Pro",
         };
         updateNodeData(node.id, { selectedModel: newSelectedModel, parameters: {} });
       } else {

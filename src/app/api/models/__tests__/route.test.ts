@@ -756,11 +756,11 @@ describe("/api/models route", () => {
       expect(data.models[1].name).toBe("Zebra");
       // Gemini models: 3 image + 4 video, sorted by name
       expect(data.models[2].provider).toBe("gemini");
-      expect(data.models[2].name).toBe("Nano Banana");
+      expect(data.models[2].name).toBe("Studio Standard");
       expect(data.models[3].provider).toBe("gemini");
-      expect(data.models[3].name).toBe("Nano Banana 2");
+      expect(data.models[3].name).toBe("Studio Flash");
       expect(data.models[4].provider).toBe("gemini");
-      expect(data.models[4].name).toBe("Nano Banana Pro");
+      expect(data.models[4].name).toBe("Studio Pro");
       expect(data.models[5].provider).toBe("gemini");
       expect(data.models[5].name).toBe("Veo 3.1");
       expect(data.models[6].provider).toBe("gemini");

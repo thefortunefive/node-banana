@@ -74,7 +74,7 @@ export async function generateWithGemini(
     };
   }
 
-  // Add resolution for Nano Banana Pro and Nano Banana 2
+  // Add resolution for Studio Pro and Studio Flash
   if ((model === "nano-banana-pro" || model === "nano-banana-2") && resolution) {
     if (!config.imageConfig) {
       config.imageConfig = {};
@@ -82,10 +82,10 @@ export async function generateWithGemini(
     (config.imageConfig as Record<string, unknown>).imageSize = resolution;
   }
 
-  // Add tools array for Google Search (Nano Banana Pro and Nano Banana 2)
+  // Add tools array for Google Search (Studio Pro and Studio Flash)
   const tools = [];
   if (model === "nano-banana-2" && (useGoogleSearch || useImageSearch)) {
-    // Nano Banana 2 uses searchTypes to enable web and/or image search independently
+    // Studio Flash uses searchTypes to enable web and/or image search independently
     const searchTypes: Record<string, Record<string, never>> = {};
     if (useGoogleSearch) searchTypes.webSearch = {};
     if (useImageSearch) searchTypes.imageSearch = {};

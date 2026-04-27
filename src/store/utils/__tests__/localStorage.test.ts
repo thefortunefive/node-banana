@@ -347,7 +347,7 @@ describe("localStorage utilities", () => {
     it("returns stored generateImage defaults when configured", () => {
       const config = {
         generateImage: {
-          selectedModel: { provider: "gemini", modelId: "nano-banana-pro", displayName: "Nano Banana Pro" },
+          selectedModel: { provider: "gemini", modelId: "nano-banana-pro", displayName: "Studio Pro" },
           aspectRatio: "4:3",
           useGoogleSearch: true,
         },

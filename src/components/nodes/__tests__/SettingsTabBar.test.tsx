@@ -8,12 +8,12 @@ describe("SettingsTabBar", () => {
       <SettingsTabBar
         activeTab="primary"
         onTabChange={vi.fn()}
-        primaryLabel="Nano Banana"
+        primaryLabel="Studio Pro"
         fallbackLabel="Flux Dev"
       />
     );
 
-    expect(screen.getByText("Nano Banana")).toBeInTheDocument();
+    expect(screen.getByText("Studio Pro")).toBeInTheDocument();
     expect(screen.getByText("Flux Dev")).toBeInTheDocument();
   });
 
@@ -22,12 +22,12 @@ describe("SettingsTabBar", () => {
       <SettingsTabBar
         activeTab="primary"
         onTabChange={vi.fn()}
-        primaryLabel="Nano Banana"
+        primaryLabel="Studio Pro"
         fallbackLabel="Flux Dev"
       />
     );
 
-    const primaryTab = screen.getByText("Nano Banana");
+    const primaryTab = screen.getByText("Studio Pro");
     const fallbackTab = screen.getByText("Flux Dev");
 
     // Active tab should have bg-neutral-700 class
@@ -41,7 +41,7 @@ describe("SettingsTabBar", () => {
       <SettingsTabBar
         activeTab="primary"
         onTabChange={onTabChange}
-        primaryLabel="Nano Banana"
+        primaryLabel="Studio Pro"
         fallbackLabel="Flux Dev"
       />
     );
@@ -56,12 +56,12 @@ describe("SettingsTabBar", () => {
       <SettingsTabBar
         activeTab="primary"
         onTabChange={onTabChange}
-        primaryLabel="Nano Banana"
+        primaryLabel="Studio Pro"
         fallbackLabel="Flux Dev"
       />
     );
 
-    fireEvent.click(screen.getByText("Nano Banana"));
+    fireEvent.click(screen.getByText("Studio Pro"));
     expect(onTabChange).not.toHaveBeenCalled();
   });
 });

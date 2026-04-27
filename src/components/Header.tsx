@@ -212,16 +212,16 @@ export function Header() {
           await loadWorkflow(workflow, dirPath);
         }}
       />
-      <header className="h-11 bg-neutral-900 border-b border-neutral-800 flex items-center justify-between px-4 shrink-0">
+      <header className="h-11 bg-[#1A1A1A] border-b border-neutral-800 flex items-center justify-between px-4 shrink-0">
         <div className="flex items-center gap-2">
           <button
             onClick={() => setShowQuickstart(true)}
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             title="Open welcome screen"
           >
-            <img src="/banana_icon.png" alt="Banana" className="w-6 h-6" />
+            <img src="/fifth-ave-icon.png" alt="5th Ave AI" className="w-6 h-6" />
             <h1 className="text-2xl font-semibold text-neutral-100 tracking-tight">
-              Node Banana
+              5th Ave AI Studio
             </h1>
           </button>
 
@@ -387,7 +387,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="text-neutral-400 hover:text-neutral-200 transition-colors"
           >
-            Made by Willie
+            Fifth Avenue AI
           </a>
           <span className="text-neutral-500">·</span>
           <button

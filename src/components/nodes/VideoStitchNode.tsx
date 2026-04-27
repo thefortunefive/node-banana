@@ -366,7 +366,7 @@ export function VideoStitchNode({ id, data, selected }: NodeProps<VideoStitchNod
             rel="noopener noreferrer"
             className="text-[10px] text-blue-400 hover:text-blue-300 underline"
           >
-            Doesn't seem right? Message Willie on Discord.
+            Doesn't seem right? Message us on Discord.
           </a>
         </div>
       </BaseNode>

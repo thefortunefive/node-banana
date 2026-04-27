@@ -26,9 +26,9 @@ const EXTENDED_ASPECT_RATIOS: AspectRatio[] = ["1:1", "1:4", "1:8", "2:3", "3:2"
 const RESOLUTIONS_PRO: Resolution[] = ["1K", "2K", "4K"];
 const RESOLUTIONS_NB2: Resolution[] = ["512", "1K", "2K", "4K"];
 const MODELS: { value: ModelType; label: string }[] = [
-  { value: "nano-banana", label: "Nano Banana" },
-  { value: "nano-banana-2", label: "Nano Banana 2" },
-  { value: "nano-banana-pro", label: "Nano Banana Pro" },
+  { value: "nano-banana", label: "Studio Standard" },
+  { value: "nano-banana-2", label: "Studio Flash" },
+  { value: "nano-banana-pro", label: "Studio Pro" },
 ];
 
 const findLayoutIndex = (rows: number, cols: number): number => {

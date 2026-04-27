@@ -5,7 +5,7 @@
  * aspect ratios, resolutions, and model identifiers.
  */
 
-// Aspect Ratios (all models support the base 10; Nano Banana 2 adds 1:4, 1:8, 4:1, 8:1)
+// Aspect Ratios (all models support the base 10; Studio Flash adds 1:4, 1:8, 4:1, 8:1)
 export type AspectRatio =
   | "1:1"
   | "1:4"
@@ -22,7 +22,7 @@ export type AspectRatio =
   | "16:9"
   | "21:9";
 
-// Resolution Options (supported by Nano Banana Pro and Nano Banana 2)
+// Resolution Options (supported by Studio Pro and Studio Flash)
 export type Resolution = "512" | "1K" | "2K" | "4K";
 
 // Image Generation Model Options
@@ -30,7 +30,7 @@ export type ModelType = "nano-banana" | "nano-banana-pro" | "nano-banana-2";
 
 // Display names for image generation models
 export const MODEL_DISPLAY_NAMES: Record<ModelType, string> = {
-  "nano-banana": "Nano Banana",
-  "nano-banana-pro": "Nano Banana Pro",
-  "nano-banana-2": "Nano Banana 2",
+  "nano-banana": "Studio Standard",
+  "nano-banana-pro": "Studio Pro",
+  "nano-banana-2": "Studio Flash",
 };

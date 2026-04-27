@@ -38,18 +38,18 @@ function reorderColumnFirst<T>(items: T[], cols: number): T[] {
 // Base 10 aspect ratios (all Gemini image models)
 const BASE_ASPECT_RATIOS: AspectRatio[] = ["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"];
 
-// Extended 14 aspect ratios (Nano Banana 2 adds extreme ratios)
+// Extended 14 aspect ratios (Studio Flash adds extreme ratios)
 const EXTENDED_ASPECT_RATIOS: AspectRatio[] = ["1:1", "1:4", "1:8", "2:3", "3:2", "3:4", "4:1", "4:3", "4:5", "5:4", "8:1", "9:16", "16:9", "21:9"];
 
-// Resolutions per model (nano-banana-pro: 1K-4K, nano-banana-2: 512-4K)
+// Resolutions per model (Studio Pro: 1K-4K, Studio Flash: 512-4K)
 const RESOLUTIONS_PRO: Resolution[] = ["1K", "2K", "4K"];
 const RESOLUTIONS_NB2: Resolution[] = ["512", "1K", "2K", "4K"];
 
 // Hardcoded Gemini image models (always available)
 const GEMINI_IMAGE_MODELS: { value: ModelType; label: string }[] = [
-  { value: "nano-banana", label: "Nano Banana" },
-  { value: "nano-banana-2", label: "Nano Banana 2" },
-  { value: "nano-banana-pro", label: "Nano Banana Pro" },
+  { value: "nano-banana", label: "Studio Standard" },
+  { value: "nano-banana-2", label: "Studio Flash" },
+  { value: "nano-banana-pro", label: "Studio Pro" },
 ];
 
 // Image generation capabilities
@@ -188,7 +188,7 @@ export function GenerateImageNode({ id, data, selected }: NodeProps<NanoBananaNo
         const newSelectedModel: SelectedModel = {
           provider: "gemini",
           modelId: nodeData.model || "nano-banana-pro",
-          displayName: GEMINI_IMAGE_MODELS.find(m => m.value === (nodeData.model || "nano-banana-pro"))?.label || "Nano Banana Pro",
+          displayName: GEMINI_IMAGE_MODELS.find(m => m.value === (nodeData.model || "nano-banana-pro"))?.label || "Studio Pro",
         };
         // Clear parameters when switching providers (different providers have different schemas)
         updateNodeData(id, { selectedModel: newSelectedModel, parameters: {} });

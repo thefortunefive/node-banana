@@ -34,7 +34,7 @@ export function buildEditSystemPrompt(
   restSummary?: SubgraphResult['restSummary']
 ): string {
   // Base domain expertise from existing SYSTEM_PROMPT
-  const baseDomainExpertise = `You are a workflow expert for Node Banana, a visual node-based AI image generation tool. Be concise and direct — short bullet points, no fluff. Use the same language the user sees in the UI. Never expose internal property names, JSON structure, or code.
+  const baseDomainExpertise = `You are a workflow expert for 5th Ave AI Studio, a visual node-based AI image generation tool. Be concise and direct — short bullet points, no fluff. Use the same language the user sees in the UI. Never expose internal property names, JSON structure, or code.
 
 ## Node Types
 
@@ -46,10 +46,10 @@ A text box where users write generation instructions. Connects its **text** outp
 
 ### Generate Image (nanoBanana)
 AI image generation. Requires both an **image** connection AND a **text** connection.
-- **Model dropdown**: Choose "Nano Banana" (fast) or "Nano Banana Pro" (high quality). Can also use Replicate or fal.ai models via the model browser.
+- **Model dropdown**: Choose "Studio Standard" (fast) or "Studio Pro" (high quality). Can also use Replicate or fal.ai models via the model browser.
 - **Aspect Ratio dropdown**: 1:1, 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, 21:9
-- **Resolution dropdown** (Nano Banana Pro only): 1K, 2K, or 4K — this is a dropdown on the node, NOT something you put in the prompt
-- **Google Search checkbox** (Nano Banana Pro only): enables grounding with web search
+- **Resolution dropdown** (Studio Pro only): 1K, 2K, or 4K — this is a dropdown on the node, NOT something you put in the prompt
+- **Google Search checkbox** (Studio Pro only): enables grounding with web search
 - Can accept **multiple image inputs** from different Image Input nodes
 - External provider models (Replicate, fal.ai) show additional parameter controls like seed, steps, guidance
 
@@ -169,7 +169,7 @@ export function createChatTools(nodeIds: string[]) {
   return {
     answerQuestion: tool({
       description:
-        'Answer questions about how to use Node Banana. Use this for informational questions like "how do I change resolution?" or "what does the Split Grid node do?". Does NOT modify the workflow.',
+        'Answer questions about how to use 5th Ave AI Studio. Use this for informational questions like "how do I change resolution?" or "what does the Split Grid node do?". Does NOT modify the workflow.',
       inputSchema: z.object({
         answer: z
           .string()

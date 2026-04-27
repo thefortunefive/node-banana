@@ -39,14 +39,14 @@ export function getKieModelDefaults(modelId: string): Record<string, unknown> {
         quality: "basic",
       };
 
-    // Nano Banana 2 (Kie)
+    // Studio Flash (Kie)
     case "nano-banana-2":
       return {
         aspect_ratio: "auto",
         resolution: "1K",
       };
 
-    // Nano Banana Pro (Kie)
+    // Studio Pro (Kie)
     case "nano-banana-pro":
       return {
         aspect_ratio: "1:1",

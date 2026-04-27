@@ -220,7 +220,7 @@ describe("SplitGridSettingsModal", () => {
       );
 
       expect(screen.getByText("Model")).toBeInTheDocument();
-      expect(screen.getByText("Nano Banana")).toBeInTheDocument();
+      expect(screen.getByText("Studio Standard")).toBeInTheDocument();
     });
 
     it("should render aspect ratio select", () => {

@@ -398,7 +398,7 @@ describe("GenerateImageNode", () => {
           selectedModel: {
             provider: "gemini",
             modelId: "nano-banana",
-            displayName: "Nano Banana",
+            displayName: "Studio Standard",
           },
         });
       });
@@ -552,7 +552,7 @@ describe("GenerateImageNode", () => {
       render(
         <TestWrapper>
           <GenerateImageNode {...createNodeProps({
-            selectedModel: { provider: "gemini", modelId: "nano-banana-pro", displayName: "Nano Banana Pro" },
+            selectedModel: { provider: "gemini", modelId: "nano-banana-pro", displayName: "Studio Pro" },
           })} />
         </TestWrapper>
       );
@@ -571,10 +571,10 @@ describe("GenerateImageNode", () => {
   describe("Fallback Settings Tab", () => {
     beforeEach(() => {
       // Enable inline parameters for tab bar tests
-      localStorage.setItem("node-banana-inline-parameters", "true");
+      localStorage.setItem("fifth-ave-studio-inline-parameters", "true");
     });
     afterEach(() => {
-      localStorage.removeItem("node-banana-inline-parameters");
+      localStorage.removeItem("fifth-ave-studio-inline-parameters");
     });
 
     it("shows tab bar when fallbackModel is set", () => {
@@ -664,7 +664,7 @@ describe("GenerateImageNode", () => {
       render(
         <TestWrapper>
           <GenerateImageNode {...createNodeProps({
-            selectedModel: { provider: "gemini", modelId: "nano-banana-pro", displayName: "Nano Banana Pro" },
+            selectedModel: { provider: "gemini", modelId: "nano-banana-pro", displayName: "Studio Pro" },
           })} />
         </TestWrapper>
       );

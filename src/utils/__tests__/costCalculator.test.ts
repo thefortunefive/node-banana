@@ -49,7 +49,7 @@ describe("hasNonGeminiProviders", () => {
           selectedModel: {
             provider: "gemini",
             modelId: "nano-banana-pro",
-            displayName: "Nano Banana Pro",
+            displayName: "Studio Pro",
           },
         },
       },
@@ -211,7 +211,7 @@ describe("hasNonGeminiProviders", () => {
           selectedModel: {
             provider: "gemini",
             modelId: "nano-banana",
-            displayName: "Nano Banana",
+            displayName: "Studio Standard",
           },
         },
       },

@@ -148,7 +148,7 @@ const KIE_MODELS: ProviderModel[] = [
   },
   {
     id: "nano-banana-pro",
-    name: "Nano Banana Pro",
+    name: "Studio Pro",
     description: "Google Gemini 3 Pro image generation via Kie.ai. Supports text-to-image and image-to-image with up to 8 input images.",
     provider: "kie",
     capabilities: ["text-to-image", "image-to-image"],
@@ -157,7 +157,7 @@ const KIE_MODELS: ProviderModel[] = [
   },
   {
     id: "nano-banana-2",
-    name: "Nano Banana 2 (Kie)",
+    name: "Studio Flash (Kie)",
     description: "Google Gemini 3.1 Flash image generation via Kie.ai. Supports text-to-image and image-to-image with resolution control.",
     provider: "kie",
     capabilities: ["text-to-image", "image-to-image"],
@@ -504,7 +504,7 @@ const KIE_MODELS: ProviderModel[] = [
 const GEMINI_IMAGE_MODELS: ProviderModel[] = [
   {
     id: "nano-banana",
-    name: "Nano Banana",
+    name: "Studio Standard",
     description: "Fast image generation with Gemini 2.5 Flash. Supports text-to-image and image-to-image with aspect ratio control.",
     provider: "gemini",
     capabilities: ["text-to-image", "image-to-image"],
@@ -513,7 +513,7 @@ const GEMINI_IMAGE_MODELS: ProviderModel[] = [
   },
   {
     id: "nano-banana-2",
-    name: "Nano Banana 2",
+    name: "Studio Flash",
     description: "High-efficiency image generation with Gemini 3.1 Flash. Supports resolution control (512/1K/2K/4K), Google Search grounding, and up to 10 reference images.",
     provider: "gemini",
     capabilities: ["text-to-image", "image-to-image"],
@@ -522,7 +522,7 @@ const GEMINI_IMAGE_MODELS: ProviderModel[] = [
   },
   {
     id: "nano-banana-pro",
-    name: "Nano Banana Pro",
+    name: "Studio Pro",
     description: "High-quality image generation with Gemini 3 Pro. Supports text-to-image, image-to-image, resolution control (1K/2K/4K), and Google Search grounding.",
     provider: "gemini",
     capabilities: ["text-to-image", "image-to-image"],

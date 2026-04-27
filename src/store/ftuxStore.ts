@@ -48,7 +48,7 @@ export interface FTUXState {
   loadTutorialSampleImage: () => Promise<void>;
 }
 
-const FTUX_COMPLETED_KEY = "node-banana-ftux-completed";
+const FTUX_COMPLETED_KEY = "fifth-ave-studio-ftux-completed";
 
 /**
  * Marks FTUX as completed in localStorage.
@@ -211,7 +211,7 @@ const initialTutorialSteps: TutorialStep[] = [
     position: "left",
     waitForClick: true,
     links: [
-      { text: "Join our Discord community", url: "https://discord.gg/node-banana" },
+      { text: "Join our Discord community", url: "https://discord.gg/fifth-ave-ai" },
     ],
     completed: false,
   },

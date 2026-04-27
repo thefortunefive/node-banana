@@ -12,16 +12,16 @@ import {
 } from "@/types";
 
 // Storage keys
-export const STORAGE_KEY = "node-banana-workflow-configs";
-export const COST_DATA_STORAGE_KEY = "node-banana-workflow-costs";
-export const GENERATE_IMAGE_DEFAULTS_KEY = "node-banana-nanoBanana-defaults";
-export const PROVIDER_SETTINGS_KEY = "node-banana-provider-settings";
-export const RECENT_MODELS_KEY = "node-banana-recent-models";
-export const NODE_DEFAULTS_KEY = "node-banana-node-defaults";
-export const CANVAS_NAVIGATION_KEY = "node-banana-canvas-navigation";
-export const LAST_PROJECT_BASE_DIR_KEY = "node-banana-last-project-dir";
-export const WORKFLOWS_DIRECTORY_KEY = "node-banana-workflows-directory";
-export const FTUX_COMPLETED_KEY = "node-banana-ftux-completed";
+export const STORAGE_KEY = "fifth-ave-studio-workflow-configs";
+export const COST_DATA_STORAGE_KEY = "fifth-ave-studio-workflow-costs";
+export const GENERATE_IMAGE_DEFAULTS_KEY = "fifth-ave-studio-nanoBanana-defaults";
+export const PROVIDER_SETTINGS_KEY = "fifth-ave-studio-provider-settings";
+export const RECENT_MODELS_KEY = "fifth-ave-studio-recent-models";
+export const NODE_DEFAULTS_KEY = "fifth-ave-studio-node-defaults";
+export const CANVAS_NAVIGATION_KEY = "fifth-ave-studio-canvas-navigation";
+export const LAST_PROJECT_BASE_DIR_KEY = "fifth-ave-studio-last-project-dir";
+export const WORKFLOWS_DIRECTORY_KEY = "fifth-ave-studio-workflows-directory";
+export const FTUX_COMPLETED_KEY = "fifth-ave-studio-ftux-completed";
 
 // Maximum recent models to store (show 4 in UI, keep 8 for persistence)
 export const MAX_RECENT_MODELS = 8;

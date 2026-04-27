@@ -534,7 +534,7 @@ describe("CostIndicator", () => {
             selectedModel: {
               provider: "gemini",
               modelId: "nano-banana",
-              displayName: "Nano Banana",
+              displayName: "Studio Standard",
             },
           },
         },

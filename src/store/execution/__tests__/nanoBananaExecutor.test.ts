@@ -28,7 +28,7 @@ function makeNode(data: Record<string, unknown> = {}): WorkflowNode {
       model: "nano-banana",
       useGoogleSearch: false,
       useImageSearch: false,
-      selectedModel: { provider: "gemini", modelId: "nano-banana", displayName: "Nano Banana" },
+      selectedModel: { provider: "gemini", modelId: "nano-banana", displayName: "Studio Standard" },
       parameters: {},
       imageHistory: [],
       selectedHistoryIndex: 0,

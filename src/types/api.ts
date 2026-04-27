@@ -13,10 +13,10 @@ export interface GenerateRequest {
   images: string[]; // Now supports multiple images
   prompt: string;
   aspectRatio?: AspectRatio;
-  resolution?: Resolution; // Only for Nano Banana Pro
+  resolution?: Resolution; // Only for Studio Pro
   model?: ModelType;
-  useGoogleSearch?: boolean; // Only for Nano Banana Pro and Nano Banana 2
-  useImageSearch?: boolean; // Only for Nano Banana 2
+  useGoogleSearch?: boolean; // Only for Studio Pro and Studio Flash
+  useImageSearch?: boolean; // Only for Studio Flash
   mediaType?: "image" | "video" | "3d" | "audio"; // Indicates expected output type for provider routing
 }
 

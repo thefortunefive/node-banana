@@ -5,7 +5,7 @@ import type { SelectedModel } from "@/types";
 const primary: SelectedModel = {
   provider: "gemini",
   modelId: "nano-banana",
-  displayName: "Nano Banana",
+  displayName: "Studio Standard",
 };
 
 const fallback: SelectedModel = {
